@@ -22,15 +22,21 @@ import { Button, Grid, Input, Image, Text } from "../elements"
 import instance from "../shared/Request";
 
 
-function Main() {
+function Main(props) {
+    const color = (props=>props.theme.color);
     
+    console.log(props)
     return (
         <Grid>
-            <h1>하이?</h1>
+            <P>312</P>
         </Grid>
 
     );
 }
+
+const P = styled.p`
+    background-color : ${props=>props.theme.color.primary}
+`;
 
 
 export default Main;

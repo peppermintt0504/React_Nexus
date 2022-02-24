@@ -9,12 +9,12 @@ const Input = ({
 
     onChange,ref,
 
-    ...props
+    
     }
     ) => {
 
     return (
-        <input type={type} onChange={onChange} ref={ref} placeholder={placeholder} defaultValue={defaultValue} style={...props, border,borderRadius, width, height, margin, padding}/>
+        <input type={type} onChange={onChange} ref={ref} placeholder={placeholder} defaultValue={defaultValue} style={ border,borderRadius, width, height, margin, padding}/>
     );
 }
 
